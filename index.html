@@ -41,6 +41,25 @@
     <div id="divider-3" class="divider"></div>
     <section id="contact-me" class="contact-me">
       <h2>Contact Me</h2>
+      <div class="flow">
+        <div class="contact-information">
+          <p>If you have some question about my projects or me, you can contact me via email.</p>
+        </div>
+        <div class="form-container">
+        <form id="form" method="POST">
+          <label for="name" class="hidden-label">name
+          </label>
+            <input type="text" name="name" id="name" placeholder="Name" autocomplete="off" required>
+          <label for="email" class="hidden-label">email
+          </label>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+          <label for="message" class="hidden-label">message
+          </label>
+            <textarea name="message" id="message" placeholder="Message" rows="6" required></textarea>
+            <input id="submit" type="submit" value="Send Message">
+        </form>
+        </div>
+      </div>
       <a class="back-to-top" href="#top">Back To Top</a>
     </section>
     <footer class="footer">
