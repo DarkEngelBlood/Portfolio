@@ -105,7 +105,7 @@ body {
 .welcome::before {
   content: "";
   position: absolute;
-  left: -340;
+  right: -440px;
   width: 90rem;
   height: 800px;
   z-index: -1;
