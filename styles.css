@@ -70,7 +70,7 @@ body {
   color: #B8CDF5;
   width: 100%;
   height: 100%;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .nav a:hover {
@@ -97,6 +97,7 @@ body {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
+  padding-left: 43px;
   height: 500px;
   max-width: 700px;
   text-align: left;
@@ -105,7 +106,7 @@ body {
 .welcome::before {
   content: "";
   position: absolute;
-  right: -440px;
+  left: -340px;
   width: 90rem;
   height: 800px;
   z-index: -1;
@@ -127,7 +128,6 @@ body {
   color: #EEF0F2;
   line-height: 1.4;
   letter-spacing: 1.3px;
-  filter: drop-shadow();
 }
 
 .welcome span::before {
@@ -138,6 +138,7 @@ body {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  filter: drop-shadow(0 0 10px #0095E150) drop-shadow(0 0 10px #0095E160);
   animation: animate 5s ease-out 1, finish 5s ease-out 5s 1, border 1.5s ease-in-out 7.5s 5;
 }
 
@@ -190,7 +191,7 @@ body {
   position: absolute;
   font-size: 35px;
   color: #EEF0F2;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .icons:hover {
@@ -199,11 +200,11 @@ body {
 }
 
 .l-icon {
-  left: 2px;
+  left: 45px;
 }
 
 .r-icon {
-  left: 57px;
+  left: 100px;
 }
 
 .arrow-icon {
@@ -239,6 +240,14 @@ body {
   border: skyblue solid 3px;
 }
 
+.projects > h2 {
+  color: #0095E1;
+  font-size: 26px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+}
+
 /* /PROJECTS */
 /* ABOUT ME */
 
@@ -247,11 +256,98 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 500px;
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 100px;
   border: skyblue solid 3px;
+}
+
+.about-me > h2 {
+  color: #0095E1;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+}
+
+.about-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  align-self: flex-start;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+
+.about-text > p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.about-text > p > a {
+  text-decoration: none;
+  font-style: italic;
+  color: #0095E1;
+}
+
+.about-text > p > a:hover {
+  color: #0079E1;
+  text-decoration: underline;
+}
+
+.about-text > h2 {
+  margin: 15px 0;
+  color: #0095E1;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
+.about-text > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.about-text > ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.skill-fa {
+  font-size: 35px;
+  margin-bottom: 5px;
+  color: #00A9FF;
+  transition: 0.2s;
+}
+
+.skill-fa:hover {
+  transform: scale(1.2);
+  color: #0079E1;
+}
+
+.about-img {
+  padding: 40px;
+}
+
+.about-img > img {
+  width: 240px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /* /ABOUT ME */
@@ -266,14 +362,14 @@ body {
   height: 500px;
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .contact-me::before {
   content: "";
   position: absolute;
   width: 90rem;
-  height: 800px;
+  height: 710px;
   z-index: -1;
   background: linear-gradient(0deg, #00A9FF,  #CDF5FD02)
 }
@@ -282,6 +378,7 @@ body {
   color: #0095E1;
   font-size: 26px;
   text-decoration: underline;
+  text-underline-offset: 3px;
   text-decoration-thickness: 3px;
 }
 
@@ -300,8 +397,7 @@ body {
 }
 
 .contact-information {
-  padding-left: 40px;
-  color: #0095E1;
+  padding-left: 33px;
   align-self: flex-start;
   margin: 7px;
 }
@@ -375,7 +471,7 @@ body {
 
 .back-to-top {
   position: absolute;
-  bottom: -115px;
+  bottom: -65px;
   text-decoration: none;
   color: #CDF5FD;
   font-size: 20;
