@@ -65,7 +65,8 @@ body {
   display: block;
   position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 21px;
+  letter-spacing: 1px;
   font-weight: 600;
   color: #B8CDF5;
   width: 100%;
@@ -97,9 +98,9 @@ body {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  padding-left: 43px;
+  padding-left: 45px;
   height: 500px;
-  max-width: 700px;
+  max-width: 1000px;
   text-align: left;
 }
 
@@ -107,16 +108,16 @@ body {
   content: "";
   position: absolute;
   left: -340px;
-  width: 90rem;
+  width: 100rem;
   height: 800px;
   z-index: -1;
   background: linear-gradient( #00A9FF,  #CDF5FD02)
 }
 
 .welcome h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.4px;
   color: #EEF0F2;
 }
 
@@ -124,10 +125,10 @@ body {
 
 .welcome span {
   position: relative;
-  font-size: 42px;
+  font-size: 50px;
   color: #EEF0F2;
   line-height: 1.4;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.4px;
 }
 
 .welcome span::before {
@@ -177,7 +178,8 @@ body {
 
 .welcome p {
   display: inline-block;
-  font-size: 22px;
+  font-size: 25px;
+  letter-spacing: 1px;
   color: #EEF0F2;
   margin-bottom: -1px;
   font-style: italic;
@@ -189,7 +191,7 @@ body {
 
 .icons {
   position: absolute;
-  font-size: 35px;
+  font-size: 40px;
   color: #EEF0F2;
   transition: 0.2s ease-in-out;
 }
@@ -200,19 +202,22 @@ body {
 }
 
 .l-icon {
-  left: 45px;
+  left: 49px;
 }
 
 .r-icon {
-  left: 100px;
+  left: 104px;
 }
+
+/* DOWN-ARROW */
 
 .arrow-icon {
   position: absolute;
   color: #0095E1;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 700;
   bottom: -60px;
-  left: 340px;
+  left: 500px;
   animation: scroll-down 1s ease-in-out infinite;
 }
 
@@ -225,6 +230,8 @@ body {
   }
 }
 
+/* /DOWN-ARROW */
+
 /* /WELCOME SECTION */
 /* PROJECTS */
 
@@ -235,14 +242,15 @@ body {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 100px;
-  height: 500px;
-  max-width: 700px;
+  height: 600px;
+  max-width: 1000px;
   border: skyblue solid 3px;
 }
 
 .projects > h2 {
   color: #0095E1;
-  font-size: 26px;
+  font-size: 30px;
+  letter-spacing: 1.4px;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
@@ -257,16 +265,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 500px;
-  max-width: 700px;
+  height: 600px;
+  max-width: 1000px;
   margin: 0 auto;
-  border: skyblue solid 3px;
 }
 
 .about-me > h2 {
   color: #0095E1;
-  font-size: 26px;
-  letter-spacing: 2px;
+  font-size: 30px;
+  letter-spacing: 1.4px;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
@@ -281,14 +288,14 @@ body {
 
 .about-text {
   align-self: flex-start;
-  margin-top: 40px;
-  padding-left: 40px;
+  margin-top: 55px;
+  padding-left: 45px;
 }
 
 .about-text > p {
-  letter-spacing: 1px;
-  font-size: 15px;
-  line-height: 1.4;
+  letter-spacing: 1.2px;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .about-text > p > a {
@@ -303,10 +310,12 @@ body {
 }
 
 .about-text > h2 {
-  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
   color: #0095E1;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 25px;
+  letter-spacing: 1.4px;
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 2px;
@@ -314,8 +323,9 @@ body {
 
 .about-text > ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
+  gap: 2em;
 }
 
 .about-text > ul > li {
@@ -323,12 +333,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: 1.3px;
 }
 
 .skill-fa {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 5px;
   color: #00A9FF;
   transition: 0.2s;
@@ -340,12 +350,12 @@ body {
 }
 
 .about-img {
-  padding: 40px;
+  padding: 45px;
 }
 
 .about-img > img {
-  width: 240px;
-  height: 340px;
+  width: 300px;
+  height: 400px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -360,7 +370,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 500px;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -376,7 +386,8 @@ body {
 
 .contact-me > h2 {
   color: #0095E1;
-  font-size: 26px;
+  font-size: 30px;
+  letter-spacing: 1.4px;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 3px;
@@ -397,14 +408,30 @@ body {
 }
 
 .contact-information {
-  padding-left: 33px;
+  padding-left: 45px;
   align-self: flex-start;
-  margin: 7px;
+  margin-top: 5px;
 }
 
+.contact-information > p {
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  line-height: 150%;
+}
+
+.email-p {
+  width: 30px;
+}
+
+.email-p:hover {
+  text-decoration: underline;
+  text-decoration-color: #0095E1;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+}
 
 #form {
-  padding: 0 50px;
+  padding-right: 53px;
 }
 
 #email, #name {
@@ -417,24 +444,25 @@ body {
   resize: none;
   padding-left: 3px;
   width: 100%;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 #submit {
   margin: 10px;
-  width: 120px;
-  height: 35px;
+  width: 150px;
+  height: 40px;
   background-color: #0095E1;
   border: none;
   color: #CDF5FD;
-  font-size: 15px;
+  font-size: 17px;
+  letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s;
 }
 
 #submit:hover {
   background-color: #CDF5FD;
-  box-shadow: 0 0 0 1px #0095E1;
+  box-shadow: 0 0 0 2px #0095E1;
   color: #0095E1;
 }
 
@@ -458,6 +486,8 @@ body {
 #message::placeholder, #email::placeholder, #name::placeholder {
   font-family: 'Lato', sans-serif;
   opacity: 0.7;
+  font-size: 14px;
+  letter-spacing: 1px;
   color: #0095E1;
 }
 
@@ -475,6 +505,7 @@ body {
   text-decoration: none;
   color: #CDF5FD;
   font-size: 20px;
+  letter-spacing: 0.9px;
   transition: 0.2s;
   font-weight: 600;
 }
@@ -502,7 +533,9 @@ body {
 }
 
 .footer p {
+  margin-top: 45px;
   font-size: 17px;
+  letter-spacing: 1px;
   color: #CDF5FD;
 }
 
